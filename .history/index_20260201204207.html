@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michaela | Web Designer Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background: #fff; color: #222; }
+
+        /* NAVBAR */
+        header { position: fixed; top: 0; width: 100%; background: #fff; border-bottom: 1px solid #eee; z-index: 1000; }
+        .navbar { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; }
+        .logo { height: 40px; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { text-decoration: none; color: #222; font-weight: bold; }
+        nav a:hover { color: #c38eb4; }
+
+        /* HERO */
+        .hero { padding-top: 120px; }
+        .hero-container { max-width: 1200px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 40px 20px; }
+        .hero-content h3 { font-size: 20px; }
+        .hero-content h1 { font-size: 48px; margin: 10px 0; }
+        .hero-content p { margin-bottom: 20px; }
+        .btn { display: inline-block; background: #c38eb4; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 25px; }
+        .btn:hover { opacity: 0.9; }
+        .social-links { margin-top: 15px; display: flex; gap: 15px; }
+        .social-icon { color: #222; font-size: 18px; }
+        .hero-image img { width: 320px; max-width: 100%; }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero-container { flex-direction: column-reverse; text-align: center; }
+            nav ul { gap: 12px; }
+            .hero-content h1 { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <img src="Pic/LOGO.png" class="logo" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h3>Hi, I'm Michaela</h3>
+            <h1>Web Designer</h1>
+            <p>Designing clean and responsive websites<br>that fit your vision.</p>
+            <a href="contact.html" class="btn">Hire me</a>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Pic/ME.png" alt="Michaela">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
