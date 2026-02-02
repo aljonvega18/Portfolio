@@ -1,19 +1,19 @@
 html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
-
-* {
-    box-sizing: border-box;
-    font-family: system-ui, Arial, sans-serif;
+* { 
+box-sizing: border-box; 
+margin: 0; 
+padding: 0; 
+font-family: Arial, sans-serif; 
 }
-
-body {
-    background: radial-gradient(circle at 50% 50%, #F4C6A5 0%, #F9D9C2 10%, #FFF3E9 30%);
-    color: #1f2937;
-    line-height: 1.7;
-}
+body {  
+        background: #fff; 
+        color: #222; 
+        line-height: 1.6; 
+        }
 
 /* NAVBAR */
 header {
@@ -21,6 +21,7 @@ header {
     top: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.9);
+    
     border-bottom: 1px solid #e5e7eb;
     z-index: 1000;
 }
@@ -37,6 +38,7 @@ header {
     height: 42px;
 }
 
+/* CENTER NAV */
 nav {
     margin-left: auto;
 }
@@ -44,7 +46,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 26px;
+    gap: 28px;
 }
 
 nav a {
@@ -53,8 +55,10 @@ nav a {
     font-weight: 500;
     position: relative;
     padding-bottom: 4px;
+    transition: color 0.3s ease;
 }
 
+/* UNDERLINE HOVER EFFECT */
 nav a::after {
     content: "";
     position: absolute;
@@ -66,98 +70,42 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
+nav a:hover {
+    color: #6366f1;
+}
+
 nav a:hover::after {
     width: 100%;
 }
-
-/* HERO */
-.hero {
+/* MAIN CONTENT */
+main {
     padding-top: 140px;
-    background: linear-gradient(180deg, #f9fafb, #ffffff);
-}
-
-.hero-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 60px 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
-.hero-content h3 {
-    color: #574029;
-    font-size: 18px;
+/* SECTION STYLE */
+main h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-    margin: 10px 0;
-}
-
-.hero-content p {
-    max-width: 500px;
+main p {
+    font-size: 1.1rem;
+    max-width: 700px;
     color: #4b5563;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 20px;
-    background: #6366f1;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    opacity: 0.9;
-}
-
-.social-links {
-    margin-top: 18px;
-    display: flex;
-    gap: 16px;
-}
-
-.social-icon {
-    font-size: 18px;
-    color: #1f2937;
-}
-
-/* MAIN */
+/* CARD FEEL FOR CONTENT */
 main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 24px;
-}
-
-section {
-    margin-bottom: 80px;
-}
-
-h2 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-}
-
-/* GRID SECTIONS */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-}
-
-.card {
-    background: white;
-    padding: 28px;
+    background: #ffffff;
     border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-.card h3 {
-    margin-bottom: 10px;
+    padding-bottom: 80px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
 }
 
 /* RESPONSIVE */
@@ -173,7 +121,7 @@ h2 {
 .hero { 
     padding-top: 120px; 
     padding-bottom: 60px; 
-    background: radial-gradient(circle at 50% 50%, #F4C6A5 0%, #F9D9C2 10%, #FFF3E9 30%);}
+    background: #f9f9f9;}
 .hero-container { 
     max-width: 1200px;   
     margin: auto; display: flex; 
@@ -193,7 +141,7 @@ h2 {
 }
 .btn { 
     display: inline-block; 
-    background: #b9c38e; 
+    background: #c38eb4; 
     color: #fff;
     padding: 12px 24px; 
     text-decoration: none; 
@@ -241,41 +189,3 @@ nav ul { gap: 12px; }
     fill: white;
 }
 
-.contact-links a {
-    display: inline-block;
-    margin: 8px 0;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-/* Email */
-.email {
-    color: #555555;
-}
-.email:hover {
-    color: #000000;
-}
-
-/* Facebook */
-.facebook {
-    color: #1877F2;
-}
-.facebook:hover {
-    color: #145DBF;
-}
-
-/* Instagram */
-.instagram {
-    background: linear-gradient(
-        45deg,
-        #F58529,
-        #DD2A7B,
-        #8134AF,
-        #515BD4
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.instagram:hover {
-    opacity: 0.8;
-}

@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    background: radial-gradient(circle at 50% 50%, #F4C6A5 0%, #F9D9C2 10%, #FFF3E9 30%);
+    background: #f8f9fb;
     color: #1f2937;
     line-height: 1.7;
 }
@@ -87,7 +87,7 @@ nav a:hover::after {
 }
 
 .hero-content h3 {
-    color: #574029;
+    color: #6366f1;
     font-size: 18px;
 }
 
@@ -173,7 +173,7 @@ h2 {
 .hero { 
     padding-top: 120px; 
     padding-bottom: 60px; 
-    background: radial-gradient(circle at 50% 50%, #F4C6A5 0%, #F9D9C2 10%, #FFF3E9 30%);}
+    background: #f9f9f9;}
 .hero-container { 
     max-width: 1200px;   
     margin: auto; display: flex; 
@@ -193,7 +193,7 @@ h2 {
 }
 .btn { 
     display: inline-block; 
-    background: #b9c38e; 
+    background: #c38eb4; 
     color: #fff;
     padding: 12px 24px; 
     text-decoration: none; 
